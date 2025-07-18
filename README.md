@@ -1,12 +1,24 @@
-# React + Vite
+# 🔐 PassQube - Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful Password Manager built using **React**, **JavaScript**, and **CSS**. It features a responsive interface for both **desktop and mobile** devices, and securely stores your passwords using **local storage** on your device.
+---
+## 🚀 Features
 
-Currently, two official plugins are available:
+- 🔐 Add, view, and delete passwords securely
+- 💻 Fully responsive for desktop and mobile
+- 💾 Uses browser **local storage** (no cloud or database)
+- 🧠 Clean and intuitive user interface
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Website
 
-## Expanding the ESLint configuration
+Check out the live project here: [PassQube Password Manager](https://yourusername.github.io/your-repo-name/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, JavaScript, CSS
+- **Storage**: LocalStorage API (client-side only)
+
+

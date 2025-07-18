@@ -1,0 +1,32 @@
+.foot {
+  background-color: #212123;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  border-top: 1px solid #4a00e0;
+  font-family: "Lexend", sans-serif;
+}
+
+.foot .head h2 {
+  margin: 0;
+  font-family: "Iceberg", sans-serif;
+  font-size: 24px;
+  color: #d3d3cf;
+  font-size: 20px;
+}
+
+.foot p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.email-link {
+  color: #2de29a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #ff00c8;
+}

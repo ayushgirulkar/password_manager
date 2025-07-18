@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* Container styling */
+.container {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #323249;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input fields */
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="url"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #727277;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Placeholder */
+.container input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+/* Input wrapper */
+.con2 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Username field responsiveness */
+.con2 input[type="text"] {
+  flex: 1;
+}
+
+/* Password wrapper */
+.pass {
+  position: relative;
+  width: 100%;
+}
+
+/* Eye icon */
+.word {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+.copy {
+  margin-left: 12px;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #0f0f0f;
+  background: linear-gradient(135deg, #9be3ff, #ff72fd);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.copy:hover {
+  background: linear-gradient(135deg, #3ec4f9, #b82cf0);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 204, 255, 0.4);
+}
+
+
+
+/* Heading section */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.heading h2 {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(240, 242, 237);
+  margin: 0;
+  line-height: 1.2;
+}
+.icon-row {
+  display: flex;
+  gap: 20px; /* space between icons */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.icon-text {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 4px;
+}
+.heading p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  color: rgb(247, 247, 165);
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Add password button */
+.btn {
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 123, 0.3);
+  margin: 10px auto 0 auto;
+  gap: 20px;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #00cfff, #ff00c8);
+  box-shadow: 0 4px 16px rgba(255, 0, 200, 0.4);
+  transform: scale(1.03);
+}
+
+/* Table wrapper for responsiveness */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+}
+
+/* Table styles */
+.password-table {
+  width: 100%;
+  min-width: 600px; /* force horizontal scroll on mobile */
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.password-table th,
+.password-table td {
+  padding: 12px 10px;
+  border: 1px solid #444;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.password-table thead {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #000;
+}
+
+.password-table tbody tr:nth-child(even) {
+  background-color: #2e2e42;
+}
+
+.password-table tbody tr:nth-child(odd) {
+  background-color: #1e1e2f;
+}
+
+.password-table td a {
+  color: #78efff;
+  text-decoration: none;
+}
+/* Mobile responsive styles */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+    gap: 16px;
+  }
+
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 60%;
+  }
+
+  .word {
+    right: 10px;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    max-height: 600px; /* Show 3 cards, scroll for more */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-right: 4px;
+  }
+
+  .table-wrapper::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+
+  .password-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    table-layout: fixed;
+    min-width: 100%;
+  }
+
+  .password-table th,
+  .password-table td {
+    padding: 8px 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+    color: #fff;
+  }
+
+  .password-table td {
+    position: relative;
+  }
+
+  .password-table,
+  .password-table thead,
+  .password-table tbody,
+  .password-table th,
+  .password-table td,
+  .password-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .password-table thead {
+    display: none;
+  }
+
+  .password-table tr {
+    margin-bottom: 12px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .password-table td {
+    padding: 8px;
+    text-align: left;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .password-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #a866ee;
+  }
+
+  .copy {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 10px;
+    padding: 2px 6px;
+    margin-left: 6px;
+  }
+
+  .icon-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .icon-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    color: #ccc;
+  }
+
+  .icon-label lord-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .password-table td.actions {
+    overflow: visible !important;
+  }
+
+  .password-table {
+    min-width: 480px;
+  }
+}
+

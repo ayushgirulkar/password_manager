@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+
+.nb {
+  background: #5c1dcd;
+  padding: 10px 0;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.loggo {
+  display: flex;
+  flex-direction: row; /* inline layout */
+  align-items: center;
+  gap: 10px; /* spacing between icon and text */
+  font-family: "Iceberg", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.lock {
+  height: 50px;
+  width: 50px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+}
+
+
+.nav-links {
+  /*font-family: "Iceberg", sans-serif;*/
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: aliceblue;
+}
+
+.nav-links li a:hover {
+  color: #00ff7b;
+  transform: scale(1.1);
+  text-shadow: 0 0 6px #00ff7b, 0 0 10px #00ff7b;
+}
+
+

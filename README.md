@@ -12,7 +12,7 @@ A simple yet powerful Password Manager built using **React**, **JavaScript**, an
 
 ## 🔗 Live Website
 
-Check out the live project here: [PassQube Password Manager](https://yourusername.github.io/your-repo-name/)
+Check out the live project here: [PassQube Password Manager](https://passqube.vercel.app/)
 
 ---
 
